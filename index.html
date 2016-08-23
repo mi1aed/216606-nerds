@@ -3,10 +3,182 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css"> </head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="main-header-top clearfix">
+        <div class="index-logo">
+          <a href="#"> <img src="img/header-logo.png" width="139" height="59" alt="Нёрдс"> </a>
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Студия</a> 
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a href="#" class="basket">
+            <span class="icon-basket"></span>
+            Корзина
+          </a>
+        </div>
+        <div class="slider">
+          <input type="radio" name="toggle" id="btn-1">
+          <input type="radio" name="toggle" id="btn-2">
+          <input type="radio" name="toggle" id="btn-3">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title"> Долго, дорого,
+                  <br>скрупулезно. </div>
+                <p>Математически выверенный дизайн<br> 
+                  для вашего сайта или мобильного приложения
+                </p> 
+                <a class="btn" href="#">Узнать больше</a> 
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title"> Любите ли вы математику,
+                  <br> как любим ее мы? </div>
+                <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>
+                  за креатив, чтобы дать им возможность все просчитать.
+                </p> 
+                <a class="btn" href="#">Узнать больше</a> 
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Только наркотики,<br>
+                  только хардкор! 
+                </div>
+                <p>Все дизайнерские решения в нашей компании принимаются
+                 только под воздействием качественных галлюциногенов.
+                </p> 
+                <a class="btn" href="#">Узнать больше</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <div class="features">
+        <div class="features-item"> 
+          <img src="/img/sites-image.jpg" width="240" height="124" alt="Веб-сайты">
+          <h2>Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="btn-site" href="#">Заказать</a>
+        </div>
+        <div class="features-item">
+          <img src="/img/apps-image.jpg" width="240" height="124" alt="Приложения">
+          <h2>Приложения</h2>
+          <p>Покорите топ-10 приложений<br>
+            в AppStrore и Google Play</p>
+          <a class="btn-app" href="#">Заказать</a>
+        </div>
+        <div class="features-item">
+          <img src="/img/presentations-image.jpg" width="240" height="124" alt="Презентации">
+          <h2>Презентации</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="btn-presentations" href="#">Заказать</a>
+        </div>
+      </div>
+    </section>
+    <section class="index-content">
+      <div class="index-content-top clearfix">
+        <div class="index-content-left">
+          <h1 class="title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
+          <p>Исповедуем принципы минимализма и чистоты. 
+            Ставим математический расчет выше креатива. 
+            Работаем не покладая рук, как роботы.</p>
+        </div>
+        <div class="index-content-right">
+          <img src="/img/main-logo.png" alt="Нёрдс"> 
+        </div>
+      </div>
+      <div class="index-content-bottom clearfix">
+        <div class="index-content-left">
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="index-content-right">
+          <h3>Как мы работаем:</h3>
+          <ul>
+            <li>C самоотдачей 146%</li>
+            <li>Соблюдая сроки на 100%</li>
+            <li>По предоплате 50%</li>
+          </ul>
+        </div>
+      </div>
+      <div class="portfolio">
+        <ul class="portfolio-list">
+          <li>
+            <a href="#"><img src="img/portfolio-image1.png" width="198" height="37" alt="Глуханко"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/portfolio-image2.png" width="199" height="68" alt="HTML-academy"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/portfolio-image3.png" width="209" height="90" alt="Барбершоп Бородинский"></a>
+          </li>
+          </ul>
+      </div>
+    </section>
+    <div class="map">
+      <div class="map-info">
+        <h2>Nёrds design studio</h2>
+        <p> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 
+          <span>тел. +7 (812) 275-75-75</span> 
+        </p> 
+        <a class="contact-btn" href="#">Напишите нам</a>
+      </div>
+      <div class="map-canvas"></div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="container clearfix">
+      <div class="footer-socials">
+        <a href="#" class="social-btn">Вконтакте
+          <span class="icon-vk"></span>
+        </a>
+        <a href="#" class="social-btn">Фейсбук
+          <span class="icon-facebook"></span>
+        </a>
+        <a href="#" class="social-btn">Инстаграм
+          <span class="icon-instagramm"></span>
+        </a>
+      </div>
+      <div class="footer-text">
+        <div class="footer-slogan">Давайте дружить, это выгодно!</div>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
