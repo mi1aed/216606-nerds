@@ -5,26 +5,165 @@ body {
 }
 
 .main-header {
-  padding-top: 50px;
-  
+  color: #000000;
   background: #eeeeee;
 }
+/*Хедер*/
 
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-header-top {
+  padding-top: 27px;
+  padding-bottom: 41px;
+  outline: 2px solid yellow;
+}
+
+.index-logo {
+  float: left;
+  width: 139px;
+  height: 56px;
+  margin-right: 160px;
+  outline: 2px solid yellow;
+}
+
+.main-navigation {
+  float: left;
+  width: 460px;
+  
+}
+
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  list-style: none;
+  outline: 2px solid yellow;
+}
+
+.main-navigation li {
+  display: inline-block;
+  
+  font-size: 14px;
+  line-height: 30px;
+  
+  vertical-align: top;
+  text-transform: uppercase;
+  padding: 0 23px;
+  margin-left: -1px;
+}
+
+.main-navigation a {
+  display: block;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  
+}
+/*Наведение*/
+.main-navigation a:hover {
+	color: #fb565a;
+}
+
+/*Нажатие*/
+.main-navigation a:active {
+  color: #000000;
+  opacity: 0.4;
+}
+
+/*Находимся на странице*/
+.main-navigation .active > a {
+	
+}
+
+.user-block {
+  position: relative;
+  float: right;
+  max-width: 140px;
+  padding-left: 30px;
+  
+  outline: 2px solid yellow;
+}
+
+.basket {
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+}
+
+.basket .icon-basket {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  
+  width: 15px;
+  height: 15px;
+    
+  background-image: url("/img/icon-basket.png");
+  opacity: 0.3;
+}
+
+/*Наведение*/
+.basket:hover {
+color: #fb565a; 
+}
+
+.basket:hover .icon-basket {
+  background-image: url("/img/icon-basket-red.png");
+  opacity: 1.0;
+  
+}
+
+/*Нажатие*/
+.basket:active {
+  color: #000000;
+  opacity: 0.4;
+}
+
+.basket:active .icon-basket {
+  background-image: url("/img/icon-basket.png");
+  opacity: 0.15;
+}
 
 /*Слайдер*/
 
 .slider {
   position: relative;
-  
+
   width: 880px;
+  min-height: 310px;
   margin: 0 auto;
+  overflow: hidden;
+  
+  outline: 2px solid yellow;
 }
 
 .slide {
-  min-height: 310px;
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 310px;
+
   background-repeat: no-repeat;
   background-position: 100% 10px;
+
+  -webkit-transition: left 0.3s ease;
+     -moz-transition: left 0.3s ease;
+          transition: left 0.3s ease;
 }
 
 .slider input[type="radio"] {
@@ -35,10 +174,11 @@ body {
   position: absolute;
   bottom: 95px;
   left: 50%;
-  
+  z-index: 10;
+
   width: 200px;
   margin-left: -100px;
-  
+
   text-align: center;
 }
 
@@ -47,13 +187,13 @@ body {
   width: 4px;
   height: 4px;
   margin: 0 3px;
-  
+
   vertical-align: top;
-  
+
   background: #ffffff;
   border: 3px solid white;
   border-radius: 50%;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .slide-text {
@@ -68,7 +208,6 @@ body {
 
 .slide p {
   font-weight: 500;
-  font-size: 16px;
   line-height: 22px;
   color: #283136;
 }
@@ -78,49 +217,61 @@ body {
   width: 220px;
   margin-top: 25px;
   padding: 12px 10px;
-  
+
   font-weight: 300;
   font-size: 12px;
-  line-height: 18px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  
+  text-decoration: none;
+
   background: #fb565a;
   border-radius: 3px;
 }
 
 .slide:nth-child(1) {
-  background-image: url("../img/slider-img1.png");
+  background-image: url("/img/slider-img1.png");
 }
 
 .slide:nth-child(2) {
-  background-image: url("../img/slider-img2.png");
+  background-image: url("/img/slider-img2.png");
 }
 
 .slide:nth-child(3) {
-  background-image: url("../img/slider-img3.png");
+  background-image: url("/img/slider-img3.png");
 }
-
-.slide {
-  display: none;
-}
-/*
-.slide:nth-child(1) {
-  display: block;
-}
-*/
 
 #btn-1:checked ~ .slides .slide:nth-child(1) {
-  display: block;
+  left: 0;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(2),
+#btn-1:checked ~ .slides .slide:nth-child(3) {
+  left: 880px;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(1) {
+  left: -880px;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(2) {
-  display: block;
+  left: 0;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(3) {
+  left: -880px;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(1) {
+  left: -880px;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(2) {
+  left: -880px;
 }
 
 #btn-3:checked ~ .slides .slide:nth-child(3) {
-  display: block;
+  left: 0;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
@@ -142,8 +293,8 @@ body {
 
 
 
-
-/*служебные стили*/
+/*служебные стили
 div {
   outline: 2px solid gray;
 }
+*/
