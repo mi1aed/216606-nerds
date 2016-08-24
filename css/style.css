@@ -111,7 +111,7 @@ clearfix:after {
   width: 15px;
   height: 15px;
     
-  background-image: url("/img/icon-basket.png");
+  background-image: url("../img/icon-basket.png");
   opacity: 0.3;
 }
 
@@ -121,7 +121,7 @@ color: #fb565a;
 }
 
 .basket:hover .icon-basket {
-  background-image: url("/img/icon-basket-red.png");
+  background-image: url("../img/icon-basket-red.png");
   opacity: 1.0;
   
 }
@@ -133,7 +133,7 @@ color: #fb565a;
 }
 
 .basket:active .icon-basket {
-  background-image: url("/img/icon-basket.png");
+  background-image: url("../img/icon-basket.png");
   opacity: 0.15;
 }
 
@@ -230,15 +230,15 @@ color: #fb565a;
 }
 
 .slide:nth-child(1) {
-  background-image: url("/img/slider-img1.png");
+  background-image: url("../img/slider-img1.png");
 }
 
 .slide:nth-child(2) {
-  background-image: url("/img/slider-img2.png");
+  background-image: url("../img/slider-img2.png");
 }
 
 .slide:nth-child(3) {
-  background-image: url("/img/slider-img3.png");
+  background-image: url("../img/slider-img3.png");
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(1) {
