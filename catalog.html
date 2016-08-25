@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nёrds - Каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="main-header-top clearfix">
+        <div class="index-logo">
+          <a href="index.html">
+            <img src="img/header-logo.png" width="139" height="59" alt="Нёрдс">
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li class="active">
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a href="#" class="basket">
+            <span class="icon-basket"></span>
+            Корзина
+          </a>
+        </div>
+        <div сlass="header-slogan">Добро пожаловать в магазин 
+          <span>готовых макетов</span> 
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container clearfix">
+    <form class="filter" action="/echo" method="get">
+      <fieldset>
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-min"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от
+              <input class="min-price" name="min-price" type="text" value="0">
+            </label>
+            <label class="max-price">до
+              <input class="min-price" name="max-price" type="text" value="15000">
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Сетка:</legend>
+        <label for="adaptive">
+          <input type="radio" name="layout" id="adaptive">
+          <span class="icon-circle"></span>
+          <span class="icon-circle-dot"></span>
+          Адаптивная 
+        </label>
+        <label for="fixed">
+          <input type="radio" name="layout" id="fixed">
+          <span class="icon-circle"></span>
+          <span class="icon-circle-dot"></span>
+          Фиксированная
+        </label>
+        <label for="fluid">
+          <input type="radio" name="layout" id="fluid">
+          <span class="icon-circle"></span>
+          <span class="icon-circle-dot"></span>
+          Резиновая
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Особенности:</legend>
+        <div class="features-field">
+          <label class="filter-checkbox">
+            <input type="checkbox" name="slider" id="slider-field" checked>
+            <span class="icon-check-on"></span>
+            <span class="icon-check-off"></span>
+            Слайдер
+          </label>
+        </div>
+        <div class="features-field">
+          <label class="filter-checkbox">
+            <input type="checkbox" name="features" id="fetures-field">
+            <span class="icon-check-on"></span>
+            <span class="icon-check-off"></span>
+            Блок преимуществ:
+          </label>
+        </div>
+        <div class="features-field">
+          <label class="filter-checkbox">
+            <input type="checkbox" name="news" id="news-field" checked>
+            <span class="icon-check-on"></span>
+            <span class="icon-check-off"></span>
+            Новости
+          </label>
+        </div>
+        <div class="features-field">
+          <label class="filter-checkbox">
+            <input type="checkbox" name="gallery" id="gallery-field">
+            <span class="icon-check-on"></span>
+            <span class="icon-check-off"></span>
+            Галерея
+          </label>
+        </div>
+        <div class="features-field">
+          <label class="filter-checkbox">
+            <input type="checkbox" name="basket" id="basket-fied">
+            <span class="icon-check-on"></span>
+            <span class="icon-check-off"></span>
+            Корзина
+          </label>
+        </div>
+      </fieldset>
+      <button class="btn" type="submit">Показать</button>
+    </form>
+    <div class="index-content-catalog">
+      <div class="gallery-sorting-tools clearfix">
+        <p>Сортировать:</p>
+        <div class="sorting-btn-wrapper">
+          <a href="#" class="sorting-btn">По цене</a>
+          <a href="#" class="sorting-btn">По типу</a>
+          <a href="#" class="sorting-btn">По функционалу</a>
+        </div>
+        <div class="sorting-item">
+          <span class="icon-down-dir"></span>
+        </div>
+        <div class="sorting-item">
+          <span class="icon-up-dir"></span>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="browser"> 
+        <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
+        <img src="img/item-image1.jpg" width="240" height="240" alt="Aviator">
+        <div class="gallery-item-description">
+          <a href="#" class="gallery-item-name">
+            <h2 class="gallery-item-title">Aviator</h2>
+            <p>Одностраничный макет с авторским дизайном</p> 
+            <a href="№" class="btn">8000 р.</a> 
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="browser"> 
+        <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
+        <img src="img/item-image2.jpg" width="240" height="240" alt="Sunset">
+        <div class="gallery-item-description">
+          <a href="#" class="gallery-item-name">
+            <h2 class="gallery-item-title">Sunset</h2>
+            <p>Интернет-магазин<br> с личным кабинетом</p> 
+            <a href="#" class="btn">10000 р.</a> 
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="browser"> 
+      <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
+      <img src="img/item-image3.jpg" width="240" height="240" alt="Forte">
+        <div class="gallery-item-description">
+          <a href="" class="gallery-item-name">
+            <h2 class="gallery-item-title">Forte</h2>
+            <p>Отличный макет
+              <br> для личного блога</p>
+              <a href="#" class="btn">5000 р.</a>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="browser">
+      <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
+      <img src="img/item-image4.jpg" width="240" height="240" alt="Modern organic thai">
+        <div class="gallery-item-description">
+          <a href="#" class="gallery-item-name">
+            <h2 class="gallery-item-title">Modern organic thai</h2>
+            <p>Сайт для ресторана быстрого питания</p>
+            <a href="#" class="btn">12000 р.</a> 
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="browser">
+        <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
+        <img src="img/item-image5.jpg" width="240" height="240" alt="Avenue">
+        <div class="gallery-item-description">
+          <a href="#" class="gallery-item-name">
+            <h2 class="gallery-item-title">Avenue</h2>
+            <p>Макет для блога о путешествиях</p>
+            <a href="#" class="btn">8000 р.</a> 
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <div class="browser">
+        <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
+        <img src="img/item-image6.jpg" alt="Dovetail">
+        <div class="gallery-item-description">
+          <a href="#" class="gallery-item-name">
+            <h2 class="gallery-item-title"></h2>
+            <p>Интернет-магазин с галереей товаров</p>
+            <a href="#" class="btn">14000 р.</a>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-paginator"> 
+      <a class="btn btn-active">1</a> 
+      <a href="#" class="btn">2</a> 
+      <a href="#" class="btn">3</a> 
+      <a href="#" class="btn gallery-next">следующая</a>
+    </div>
+  </main>
+  <div class="map">
+    <div class="map-info">
+      <h2>Nёrds design studio</h2>
+      <p> 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 
+        <span>тел. +7 (812) 275-75-75</span> 
+      </p> 
+      <a class="contact-btn" href="#">Напишите нам</a>
+    </div>
+    <div class="map-canvas">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-bDcvNrCAiTUxj_izzu4kytOJTpHI5Ky&amp;width=100%&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
+    </div>
+  </div>
+  <footer class="main-footer">
+    <div class="container clearfix">
+      <div class="footer-socials">
+        <a href="#" class="social-btn">Вконтакте
+          <span class="icon-vk"></span>
+        </a> 
+        <a href="#" class="social-btn">Фейсбук
+          <span class="icon-facebook"></span>
+        </a> 
+        <a href="#" class="social-btn">Инстаграм
+          <span class="icon-instagramm"></span>
+        </a> 
+      </div>
+      <div class="footer-text">
+        <h4>Давайте дружить, это выгодно!</h4>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
