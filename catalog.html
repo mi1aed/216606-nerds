@@ -47,8 +47,8 @@
   <main class="container clearfix">
     <div class="sidebar">
       <form class="filter" action="/echo" method="get">
-        <fieldset>
-          <legend>Стоимость:</legend>
+        <div class="range">
+          <h2>Стоимость:</h2>
           <div class="range-filter">
             <div class="range-controls">
               <div class="scale">
@@ -66,69 +66,73 @@
               </label>
             </div>
           </div>
-        </fieldset>
-        <fieldset>
-          <div class="layout-field">
-            <legend>Сетка:</legend>
-	          <div class="layout-field">
-		      	<label class="filter-radio">
-                  <input type="radio" name="layout" id="adaptive">  
-                  <span class="icon-circle"></span>
-                  <span class="icon-circle-dot"></span>Адаптивная
-				</label>
-			  </div>
-		      <div class="layout-field">
-				<label class="filter-radio">
-			      <input type="radio" name="layout" id="fixed">
-			      <span class="icon-circle"></span>
-			      <span class="icon-circle-dot"></span>Фиксированная
-				</label>
-		      </div>
-				<div class="layout-field">
-                  <label class="filter-radio">
-                    <input type="radio" name="layout" id="fluid">
-                    <span class="icon-circle"></span>
-                    <span class="icon-circle-dot"></span>Резиновая</label>
-                  </div>
-                  </fieldset>
-                  <fieldset>
-                    <legend>Особенности:</legend>
-                    <div class="features-field">
-                      <label class="filter-checkbox">
-                        <input type="checkbox" name="slider" id="slider-field" checked>
-                        <span class="icon-check-on"></span>
-                        <span class="icon-check-off"></span> Слайдер
-                      </label>
-                    </div>
-                    <div class="features-field">
-                      <label class="filter-checkbox">
-                        <input type="checkbox" name="features" id="features-field">
-                        <span class="icon-check-on"></span>
-                        <span class="icon-check-off"></span>Блок преимуществ
-                      </label>
-                    </div>
-                    <div class="features-field">
-                      <label class="filter-checkbox">
-                        <input type="checkbox" name="news" id="news-field" checked><span class="icon-check-on"></span>
-                        <span class="icon-check-off"></span>Новости
-                      </label>
-                    </div>
-                    <div class="features-field">
-                      <label class="filter-checkbox">
-                        <input type="checkbox" name="gallery" id="gallery-field">
-                        <span class="icon-check-on"></span>
-                        <span class="icon-check-off"></span>
-                        Галерея
-                      </label>
-                    </div>
-                    <div class="features-field">
-                      <label class="filter-checkbox">
-                        <input type="checkbox" name="basket" id="basket-fied">
-                <span class="icon-check-on"></span>
-                <span class="icon-check-off"></span>Корзина 
-              </label>
-            </div>
-          </fieldset>
+        </div>
+        <div class="layout-field">
+          <h2>Сетка:</h2>
+	      <div class="layout-field">
+		    <label class="filter-radio">
+              <input type="radio" name="layout" id="adaptive">  
+              <span class="icon-circle"></span>
+              <span class="icon-circle-dot"></span>
+              Адаптивная
+		    </label>
+		  </div>
+		  <div class="layout-field">
+		    <label class="filter-radio">
+		      <input type="radio" name="layout" id="fixed">
+		      <span class="icon-circle"></span>
+			  <span class="icon-circle-dot"></span>
+			  Фиксированная
+		    </label>
+		  </div>
+		  <div class="layout-field">
+            <label class="filter-radio">
+              <input type="radio" name="layout" id="fluid">
+              <span class="icon-circle"></span>
+              <span class="icon-circle-dot"></span>
+                Резиновая
+            </label>
+          </div>
+        </div>
+        <div class="features">
+          <h2>Особенности:</h2>
+          <div class="features-field">
+            <label class="filter-checkbox">
+              <input type="checkbox" name="slider" id="slider-field" checked>
+              <span class="icon-check-on"></span>
+              <span class="icon-check-off"></span> Слайдер
+            </label>
+          </div>
+          <div class="features-field">
+            <label class="filter-checkbox">
+              <input type="checkbox" name="features" id="features-field">
+              <span class="icon-check-on"></span>
+              <span class="icon-check-off"></span>Блок преимуществ
+            </label>
+          </div>
+          <div class="features-field">
+            <label class="filter-checkbox">
+              <input type="checkbox" name="news" id="news-field" checked><span class="icon-check-on"></span>
+              <span class="icon-check-off"></span>Новости
+            </label>
+          </div>
+          <div class="features-field">
+            <label class="filter-checkbox">
+              <input type="checkbox" name="gallery" id="gallery-field">
+              <span class="icon-check-on"></span>
+              <span class="icon-check-off"></span>
+              Галерея
+            </label>
+          </div>
+          <div class="features-field">
+            <label class="filter-checkbox">
+              <input type="checkbox" name="basket" id="basket-fied">
+              <span class="icon-check-on"></span>
+              <span class="icon-check-off"></span>
+              Корзина 
+            </label>
+          </div>
+        </div>
         <button class="btn" type="submit">Показать</button>
       </form>
     </div>  
@@ -150,7 +154,7 @@
     <div class="gallery">
       <article class="gallery-item">
         <div class="browser"> 
-          <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
+          <img class="browser-img" src="img/browser-image.png" width="240" height="30" alt="">
           <img src="img/item-image1.jpg" width="240" height="240" alt="Aviator">
           <div class="gallery-item-description">
             <a href="#" class="gallery-item-name">
@@ -163,7 +167,7 @@
       </article>
       <article class="gallery-item">
         <div class="browser"> 
-          <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
+          <img class="browser-img" src="img/browser-image.png" width="240" height="30" alt="">
           <img src="img/item-image2.jpg" width="240" height="240" alt="Sunset">
           <div class="gallery-item-description">
             <a href="#" class="gallery-item-name">
@@ -176,7 +180,7 @@
       </article>
       <article class="gallery-item">
         <div class="browser"> 
-        <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
+        <img class="browser-img" src="img/browser-image.png" width="240" height="30" alt="">
         <img src="img/item-image3.jpg" width="240" height="240" alt="Forte">
           <div class="gallery-item-description">
             <a href="" class="gallery-item-name">
@@ -190,7 +194,7 @@
       </article>
       <article class="gallery-item">
         <div class="browser">
-        <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
+        <img class="browser-img" src="img/browser-image.png" width="240" height="30" alt="">
         <img src="img/item-image4.jpg" width="240" height="240" alt="Modern organic thai">
           <div class="gallery-item-description">
             <a href="#" class="gallery-item-name">
@@ -203,7 +207,7 @@
       </article>
       <article class="gallery-item">
         <div class="browser">
-          <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
+          <img class="browser-img" src="img/browser-image.png" width="240" height="30" alt="">
           <img src="img/item-image5.jpg" width="240" height="240" alt="Avenue">
           <div class="gallery-item-description">
             <a href="#" class="gallery-item-name">
@@ -216,7 +220,7 @@
       </article>
       <article class="gallery-item">
       <div class="browser">
-        <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
+        <img class="browser-img" src="img/browser-image.png" width="240" height="30" alt="">
         <img src="img/item-image6.jpg" alt="Dovetail">
         <div class="gallery-item-description">
           <a href="#" class="gallery-item-name">
@@ -253,15 +257,15 @@
   <footer class="main-footer">
     <div class="container clearfix">
       <div class="footer-socials">
-        <a href="#" class="social-btn">Вконтакте
-          <span class="icon-vk"></span>
-        </a> 
-        <a href="#" class="social-btn">Фейсбук
-          <span class="icon-facebook"></span>
-        </a> 
-        <a href="#" class="social-btn">Инстаграм
-          <span class="icon-instagramm"></span>
-        </a> 
+        <a href="#" class="social-btn icon-vk">
+          Вконтакте
+        </a>
+        <a href="#" class="social-btn icon-fb">
+          Фейсбук 
+        </a>
+        <a href="#" class="social-btn icon-inst">
+          Инстаграм
+        </a>
       </div>
       <div class="footer-text">
         <h4>Давайте дружить, это выгодно!</h4>
