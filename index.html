@@ -38,41 +38,58 @@
           </a>
         </div>
         <div class="slider">
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
-        <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Долго, дорого,<br>
+                  скрупулезно
+                </div>
+                <p>Математически выверенный дизайн<br>
+                  для вашего сайта или мобильного приложения.</p>
+                <a class="btn-slide" href="#">
+                  Узнать больше
+                </a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Любите ли вы математику,<br>
+                  как любим ее мы?
+                </div>
+                <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>
+                  за креатив, чтобы дать им возможность все просчитать.
+                </p>
+                <a class="btn-slide" href="#">
+                  Узнать больше
+                </a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Только наркотики,<br>
+                  только хардкор!
+                </div>
+                <p>Все дизайнерские решения в нашей компании принимаются
+                 только под воздействием качественных галлюциногенов.</p>
+                <a class="btn-slide" href="#">
+                  Узнать больше
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="slides">
-          <div class="slide">
-            <div class="slide-text">
-              <div class="slide-title">Долго, дорого,<br>скрупулезно</div>
-              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-              <a class="btn-slide" href="#">Узнать больше</a>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide-text">
-              <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
-              <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
-              <a class="btn-slide" href="#">Узнать больше</a>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide-text">
-              <div class="slide-title">Только наркотики,<br> только хардкор!</div>
-              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
-              <a class="btn-slide" href="#">Узнать больше</a>
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   </header>
+  
   <main>
     <section class="features-promo container">
       <div class="features">
@@ -113,17 +130,29 @@
         <div class="index-content-left clearfix">
           <h3>Выполняем заказы на разработку:</h3>
           <ul>
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для iOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
+            <li>
+              Веб-сайтов любой сложности
+            </li>
+            <li>
+              Мобильных приложений для iOS и Android
+            </li>
+            <li>
+              Слайдшоу и видео для корпоративных презентаций
+            </li>
           </ul>
         </div>
         <div class="index-content-right">
           <h3>Как мы работаем:</h3>
           <ul>
-            <li>C самоотдачей 146%</li>
-            <li>Соблюдая сроки на 100%</li>
-            <li>По предоплате 50%</li>
+            <li>
+              C самоотдачей 146%
+            </li>
+            <li>
+              Соблюдая сроки на 100%
+            </li>
+            <li>
+              По предоплате 50%
+            </li>
           </ul>
         </div>
       </div>
@@ -160,6 +189,7 @@
       </div>
     </div>
   </main>
+  
   <footer class="main-footer">
     <div class="container clearfix">
       <div class="footer-socials">
@@ -170,7 +200,7 @@
           Фейсбук 
         </a>
         <a href="#" class="social-btn icon-inst">
-          Инстаграм
+          Инстаграмм
         </a>
       </div>
       <div class="footer-text">
@@ -179,5 +209,25 @@
       </div>
     </div>
   </footer>
+  <div class="modal-content clearfix">
+    <button class="modal-content-close" type="button" title="Закрыть"></button>
+    <form class="feedback-form" action="/echo">
+      <div class="field-row clearfix">
+        <div class="name-field">
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name-field" id="name-field" placeholder="представьтесь, пожалуйста"> </div>
+        <div class="email-field">
+          <label for="email-field">Ваш e-mail</label>
+          <input type="text" name="email" value="" id="email-field" placeholder="для отправки ответа"> </div>
+        <div class="comment-field">
+          <label for="comment-field">Текст письма:</label>
+          <textarea name="comment" id="comment-field" rows="5" placeholder="В свободной форме"> </textarea>
+        </div>
+        <button type="submit" class="btn">Отправить</button>
+      </div>
+    </form>
+</div>
+  
 </body>
+
 </html>
