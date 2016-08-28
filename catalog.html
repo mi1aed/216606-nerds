@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css"> 
 </head>
 
-<body>
+<body class="inner-page">
   <header class="main-header">
     <div class="container">
       <div class="main-header-top clearfix">
@@ -27,7 +27,7 @@
               <a href="#">Клиенты</a>
             </li>
             <li class="active">
-              <a href="#">Магазин</a>
+              <a>Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -40,8 +40,7 @@
             Корзина
           </a>
         </div>
-        <h1 сlass="header-slogan">Добро пожаловать в магазин готовых макетов 
-        </h1>
+        <h1 сlass="header-slogan">Добро пожаловать в магазин готовых макетов</h1>
       </div>
     </div>
   </header>
@@ -89,7 +88,7 @@
                   <label class="filter-radio">
                     <input type="radio" name="layout" id="fluid">
                     <span class="icon-circle"></span>
-                    <span class="icon-circle-dot"></span>Резиновая </label>
+                    <span class="icon-circle-dot"></span>Резиновая</label>
                   </div>
                   </fieldset>
                   <fieldset>
@@ -98,32 +97,39 @@
                       <label class="filter-checkbox">
                         <input type="checkbox" name="slider" id="slider-field" checked>
                         <span class="icon-check-on"></span>
-                        <span class="icon-check-off"></span> Слайдер </label>
+                        <span class="icon-check-off"></span> Слайдер
+                      </label>
                     </div>
                     <div class="features-field">
                       <label class="filter-checkbox">
-                        <input type="checkbox" name="features" id="fetures-field">
+                        <input type="checkbox" name="features" id="features-field">
                         <span class="icon-check-on"></span>
-                        <span class="icon-check-off"></span>Блок преимуществ </label>
+                        <span class="icon-check-off"></span>Блок преимуществ
+                      </label>
                     </div>
                     <div class="features-field">
                       <label class="filter-checkbox">
                         <input type="checkbox" name="news" id="news-field" checked><span class="icon-check-on"></span>
-                        <span class="icon-check-off"></span>Новости </label>
+                        <span class="icon-check-off"></span>Новости
+                      </label>
                     </div>
                     <div class="features-field">
                       <label class="filter-checkbox">
-                        <input type="checkbox" name="gallery" id="gallery-field"><span class="icon-check-on"></span>
-                        <span class="icon-check-off"></span>Галерея </label>
+                        <input type="checkbox" name="gallery" id="gallery-field">
+                        <span class="icon-check-on"></span>
+                        <span class="icon-check-off"></span>
+                        Галерея
+                      </label>
                     </div>
                     <div class="features-field">
                       <label class="filter-checkbox">
                         <input type="checkbox" name="basket" id="basket-fied">
-                        <span class="icon-check-on"></span>
-                        <span class="icon-check-off"></span>Корзина </label>
-                    </div>
-                  </fieldset>
-                  <button class="btn" type="submit">Показать</button>
+                <span class="icon-check-on"></span>
+                <span class="icon-check-off"></span>Корзина 
+              </label>
+            </div>
+          </fieldset>
+        <button class="btn" type="submit">Показать</button>
       </form>
     </div>  
     <div class="index-content-catalog">
@@ -142,7 +148,7 @@
         </div>
       </div>
     <div class="gallery">
-      <div class="gallery-item">
+      <article class="gallery-item">
         <div class="browser"> 
           <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
           <img src="img/item-image1.jpg" width="240" height="240" alt="Aviator">
@@ -154,8 +160,8 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="gallery-item">
+      </article>
+      <article class="gallery-item">
         <div class="browser"> 
           <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
           <img src="img/item-image2.jpg" width="240" height="240" alt="Sunset">
@@ -167,8 +173,8 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="gallery-item">
+      </article>
+      <article class="gallery-item">
         <div class="browser"> 
         <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
         <img src="img/item-image3.jpg" width="240" height="240" alt="Forte">
@@ -181,8 +187,8 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="gallery-item">
+      </article>
+      <article class="gallery-item">
         <div class="browser">
         <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
         <img src="img/item-image4.jpg" width="240" height="240" alt="Modern organic thai">
@@ -194,8 +200,8 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="gallery-item">
+      </article>
+      <article class="gallery-item">
         <div class="browser">
           <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
           <img src="img/item-image5.jpg" width="240" height="240" alt="Avenue">
@@ -207,8 +213,8 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="gallery-item">
+      </article>
+      <article class="gallery-item">
       <div class="browser">
         <img class="browser-img" src="/img/browser-image.png" width="240" height="30" alt="">
         <img src="img/item-image6.jpg" alt="Dovetail">
@@ -220,7 +226,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </article>
     </div>
     <div class="gallery-paginator"> 
       <a class="btn btn-active">1</a> 
