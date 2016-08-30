@@ -1,5 +1,6 @@
 body {
   font-size: 16px;
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: #000000;
 }
@@ -298,6 +299,7 @@ body {
   vertical-align: top;
   margin-right: 80px;
   width: 240px;
+  font-weight: 500;
 }
 
 .features-item:last-child {
@@ -308,13 +310,15 @@ body {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 20px;
+  margin-left: 0px;
 }
 
 .features-item p {
   font-size: 15px;
   line-height: 22px;
-  margin: 0;
-  margin-bottom: 27px;
+  margin-left: 0;
+  margin-bottom: 24px;
 }
 
 .btn {
@@ -382,6 +386,7 @@ body {
 
 .index-content-top {
   margin-bottom: 15px;
+  font-weight: 500;
 }
 
 .index-content-left {
@@ -440,6 +445,7 @@ body {
   margin-top: 68px;
   margin-bottom: 90px;
   border-bottom: 2px solid #eeeeee;
+  border-top: 2px solid #eeeeee;
 }
 
 .portfolio-list {
@@ -1047,7 +1053,7 @@ main {
 }
 
 .map-info p {
-  margin 0;
+  margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 20px;
@@ -1192,7 +1198,7 @@ main {
 /*Форма*/
 
 .modal-content {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 200;
   top: 50%;
@@ -1239,9 +1245,60 @@ main {
 }
 .modal-content-close::after {
 	transform: rotate(-45deg);
+}
 
+.feedback-form input[type="text"],
+.feedback-form textarea {
+  width: 194px;
+  padding: 10px 15px;
+  padding-right: 8px;
+  
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
 
+  color: #000000;
+  background: #ffffff;
+  border: 2px solid #d7dcde;
+  border-radius: 1px;
+}
 
+.feedback-form input[type="text"]:hover, 
+.feedback-form textarea:hover {
+  border: 2px solid #a2a9ac;
+}
+
+.feedback-form textarea {
+  width: 458px;
+  padding: 10px;
+}
+
+.feedback-form label {
+  display: block;
+  padding: 10px 0;
+}
+
+.feedback-form .field-row {
+	margin-bottom: 5px;
+ }
+
+.name-field {
+  float: left;
+  width: 216px;
+}
+.email-field {
+  float: right;
+  width: 216px;
+}
+
+.comment-field {
+  clear: both;  
+}
+
+.field-row .btn {
+  width: 100%;
+}
 
 
 
