@@ -69,72 +69,40 @@
         </div>
         <div class="layout-field">
           <h2>Сетка:</h2>
-	      <div class="layout-field">
-		    <label class="filter-radio">
-              <input type="radio" name="layout" id="adaptive">  
-              <span class="icon-circle"></span>
-              <span class="icon-circle-dot"></span>
-              Адаптивная
-		    </label>
-		  </div>
-		  <div class="layout-field">
-		    <label class="filter-radio">
-		      <input type="radio" name="layout" id="fixed">
-		      <span class="icon-circle"></span>
-			  <span class="icon-circle-dot"></span>
-			  Фиксированная
-		    </label>
-		  </div>
-		  <div class="layout-field">
-            <label class="filter-radio">
-              <input type="radio" name="layout" id="fluid">
-              <span class="icon-circle"></span>
-              <span class="icon-circle-dot"></span>
-                Резиновая
-            </label>
+	      <div class="fieldset-item">
+            <input type=radio name="grid" value="adaptive" id="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
+          </div>
+          <div class="fieldset-item">
+            <input type=radio name="grid" value="fixed" id="fixed">
+            <label for="fixed">Фиксированная</label>
+          </div>
+          <div class="fieldset-item">
+            <input type=radio name="grid" value="stretched" id="stretched">
+            <label for="stretched">Резиновая</label>
           </div>
         </div>
         <div class="features">
           <h2>Особенности:</h2>
-          <div class="features-field">
-            <label class="filter-checkbox">
-              <input type="checkbox" name="slider" id="slider-field" checked>
-              <span class="icon-check-on"></span>
-              <span class="icon-check-off"></span>
-              Слайдер
-            </label>
+          <div class="fieldset-item">
+		    <input type=checkbox name="features" id="slider" checked>
+            <label for="slider">Слайдер</label>
           </div>
-          <div class="features-field">
-            <label class="filter-checkbox">
-              <input type="checkbox" name="features" id="features-field">
-              <span class="icon-check-on"></span>
-              <span class="icon-check-off"></span>
-              Блок преимуществ
-            </label>
+          <div class="fieldset-item">
+            <input type=checkbox name="features" id="block">
+            <label for="block">Блок преимуществ</label>
           </div>
-          <div class="features-field">
-            <label class="filter-checkbox">
-              <input type="checkbox" name="news" id="news-field" checked>
-              <span class="icon-check-on"></span>
-              <span class="icon-check-off"></span>
-              Новости
-            </label>
+          <div class="fieldset-item">
+            <input type=checkbox name="features" id="news" checked>
+            <label for="news">Новости</label>
           </div>
-          <div class="features-field">
-            <label class="filter-checkbox">
-              <input type="checkbox" name="gallery" id="gallery-field">
-              <span class="icon-check-on"></span>
-              <span class="icon-check-off"></span>
-              Галерея
-            </label>
+          <div class="fieldset-item">
+            <input type=checkbox name="features" id="gallery">
+            <label for="gallery">Галерея</label>
           </div>
-          <div class="features-field">
-            <label class="filter-checkbox">
-              <input type="checkbox" name="basket" id="basket-fied">
-              <span class="icon-check-on"></span>
-              <span class="icon-check-off"></span>
-              Корзина 
-            </label>
+          <div class="fieldset-item">
+            <input type=checkbox name="features" id="cart">
+            <label for="cart">Корзина</label>
           </div>
         </div>
         <button class="btn" type="submit">Показать</button>
@@ -148,12 +116,10 @@
           <a href="#" class="sorting-btn">По типу</a>
           <a href="#" class="sorting-btn">По функционалу</a>
         </div>
-        <div class="sorting-item">
-          <span class="icon-down-dir"></span>
-        </div>
-        <div class="sorting-item">
-          <span class="icon-up-dir"></span>
-        </div>
+        <div class="triangles">
+          <a href="#" class="triangles-down-active"></a>
+		  <a href="#" class="triangles-up"></a>
+		</div>
       </div>
     <div class="gallery">
       <article class="gallery-item">

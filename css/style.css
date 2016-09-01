@@ -20,7 +20,7 @@ body {
 }
 
 .clearfix:after {
-  content: " ";
+  content: "";
   display: table;
   clear: both;
 }
@@ -55,9 +55,9 @@ body {
   font-size: 14px;
   line-height: 30px;
   vertical-align: top;
-  text-transform: uppercase;
   padding: 0 23px;
   margin-left: -1px;
+  text-transform: uppercase;
 }
 
 .main-navigation a {
@@ -609,7 +609,6 @@ main {
   border: none;
   outline: none;
 }
-
 .range {
   margin-bottom: 45px;
 }
@@ -618,81 +617,109 @@ main {
   margin-bottom: 20px;
 }
 
+input[type="radio"] {
+  display: none;
+}
 
-.layout-field .filter-radio {
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
   position: relative;
-  padding-left: 35px;
-  font-size: 16px;
-  line-height: 20px;
-  color: #283136;
+  display: inline-block;
+  height: 28px;
+  margin: 0 4px 0 0;
+  margin-bottom: 13px;
+  padding-left: 34px;
+  vertical-align: top;
   cursor: pointer;
 }
 
-.layout-field .filter-radio:hover {
-  color: #000000;
+label {
+  color: #283136;
 }
 
-
-.filter-radio input[type="radio"] {
-  display: none;
-}
-
-.filter-radio span {
-  margin-right: 10px;
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 28px;
   font-size: 28px;
-  line-height: 20px;
   color: #c1c1c1;
 }
 
-.filter-radio span:hover {
-  color: #b5b5b5;
+input[type="radio"] + label::before {
+  background: url("../img/radio-unchecked.png") no-repeat;
+  content: "";
 }
 
-
-.filter-radio .icon-circle-dot {
-  display: none;
-  position: absolute;
-  top: -5px;
-  left: -7px;
+input[type="checkbox"] + label::before {
+  background: url("../img/checkbox-unchecked.png") no-repeat;
+  content: "";
 }
 
-.filter-radio .icon-circle {
-  position: absolute;
-  top: -5px;
-  left: -7px;
+input[type="radio"]:checked + label::before {
+  background: url("../img/radio-checked.png") no-repeat;
+  content: "";
 }
 
-.filter-radio input[type="radio"]:checked ~ .icon-circle-dot {
-  display: block;
+input[type="checkbox"]:checked + label::before {
+  background: url("../img/checkbox-checked.png") no-repeat;
+  content: "";
 }
 
-.filter-radio input[type="radio"]:checked ~ .icon-circle {
-  display: none;
+input[type="radio"] + label:hover::before {
+  background: url("../img/radio-unchecked.png") no-repeat;
+  content: "";
 }
 
-.filter-radio .icon-circle {
-  position: absolute;
-  top: 3px;
-  left: 1px;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-color: white;
-  border-radius: 50%;
-  box-shadow:  0 0 0 2px rgba(35, 31, 32, 0.2);
+input[type="checkbox"] + label:hover::before {
+  background: url("../img/checkbox-unchecked.png") no-repeat;
+  content: "";
 }
 
-.filter-radio .icon-circle-dot {
-  position: absolute;
-  top: 6px;
-  left: 4px;
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  background-color: rgba(35, 31, 32, 0.2);
-  border-radius: 50%;
+input[type="radio"]:checked + label:hover::before {
+  background: url("../img/radio-checked.png") no-repeat;
+  content: "";
 }
 
+input[type="checkbox"]:checked + label:hover::before {
+  background: url("../img/checkbox-checked.png") no-repeat;
+  content: "";
+}
+
+input[type="radio"]:disabled + label {
+  background: url("../img/radio-unchecked.png") no-repeat;
+  content: "";
+  opacity: 0.4;
+}
+
+input[type="checkbox"]:disabled + label {
+  background: url("../img/checkbox-unchecked.png") no-repeat;
+  content: "";
+  opacity: 0.4;
+}
+
+input[type="radio"]:checked:disabled + label {
+  background: url("../img/radio-checked.png") no-repeat;
+  content: "";
+  opacity: 0.4;
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+  background: url("../img/checkbox-checked-block.png") no-repeat;
+  content: "";
+  opacity: 0.4;
+}
+
+input[type="radio"] + label:hover,
+input[type="checkbox"] + label:hover {
+  color: #000000;
+}
 
 .features {
   margin-top: 45px;
@@ -893,6 +920,88 @@ main {
   line-height: 18px;
   text-transform: uppercase;
 }
+
+.triangles {
+	position: relative;
+	float: right;
+	width: 28px;
+	margin-top: 15px;
+}
+
+.triangles a,
+.triangles a:hover {
+	border: none;
+}
+
+.triangles-up::before {
+	position: absolute;
+	top: 1px;
+	left: 17px;
+	width: 11px;
+	height: 10px;
+	background: url(../img/up.png);
+	content: "";
+}
+
+.triangles-up:hover::before {
+	background: url(../img/up-hover.png);
+}
+
+.triangles-down:hover::before {
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 11px;
+	height: 10px;
+	background: url(../img/down-hover.png);
+	content: "";
+}
+
+.triangles-up:active::before {
+	background: url(../img/up-active.png);
+}
+
+.triangles-down:active::before {
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 11px;
+	height: 10px;
+	background: url(../img/down-active.png);
+	content: "";
+}
+
+.triangles-down {
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 11px;
+	height: 10px;
+	background: url(../img/down.png);
+}
+
+.triangles-up-active::before {
+	position: absolute;
+	top: 1px;
+	left: 17px;
+	width: 11px;
+	height: 10px;
+	background: url(../img/active-up.png);
+	content: "";
+}
+
+.triangles-down-active {
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 11px;
+	height: 10px;
+	background: url(../img/active-down.png);
+}
+
+
+
+
 
 .sorting-btn-wrapper {
   float: left;
@@ -1198,7 +1307,7 @@ main {
 /*Форма*/
 
 .modal-content {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 200;
   top: 50%;
@@ -1246,30 +1355,40 @@ main {
 	transform: rotate(-45deg);
 }
 
-.feedback-form input[type="text"] {
-  width: 194px;
+.feedback-form input[type="text"],
+.feedback-form textarea {
+  width: 196px;
   padding: 10px 15px;
   padding-right: 8px;
-  
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
-
   color: #000000;
   background: #ffffff;
   border: 2px solid #d7dcde;
   border-radius: 1px;
 }
 
-.feedback-form input[type="text"]:hover, 
+.feedback-form input[type="text"]:hover,
 .feedback-form textarea:hover {
   border: 2px solid #a2a9ac;
 }
 
+.feedback-form input[type="text"]:focus,
+.feedback-form textarea:focus {
+  border: 2px solid #d7dcde;
+}
+
 .feedback-form textarea {
-  width: 460px;
+  width: 440px;
   padding: 10px;
+  resize: none;
+  margin-bottom: 40px;
+}
+
+.feedback-form .field-row {
+  margin-bottom: 5px;
 }
 
 .feedback-form label {
@@ -1277,29 +1396,16 @@ main {
   padding: 10px 0;
 }
 
-.feedback-form .field-row {
-	margin-bottom: 5px;
- }
-
 .name-field {
   float: left;
   width: 220px;
-  margin-right: 20px;
 }
+
 .email-field {
   float: right;
   width: 220px;
 }
 
-.comment-field {
-  clear: both;  
-}
-
-.feedback-form textarea {
-  box-sizing: border-box;
-  width: 460px;
-  margin-bottom: 50px;
-}
 
 .field-row .btn {
   width: 100%;
@@ -1317,35 +1423,6 @@ main {
   outline: none;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
