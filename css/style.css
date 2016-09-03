@@ -773,64 +773,6 @@ input[type="checkbox"] + label:hover {
 .features {
   margin-bottom: 41px;
 }
-/*
-.features-field {
-  margin-bottom: 20px;
-}
-
-.features-field .filter-checkbox {
-  position: relative;
-  padding-left: 35px;
-  font-size: 16px;
-  line-height: 20px;
-  color: #283136;
-  cursor: pointer;
-}
-
-.features-field .filter-checkbox:hover {
-  color: #000000;
-}
-
-.filter-checkbox input[type="checkbox"] {
-  display: none;
-}
-
-.filter-checkbox span {
-  margin-right: 10px;
-  font-size: 28px;
-  line-height: 20px;
-  color: #c1c1c1;
-}
-
-
-.filter-checkbox span:hover {
-  color: #b5b5b5;
-}
-
-
-.filter-checkbox .icon-check-on {
-  display: none;
-  position: absolute;
-  top: -5px;
-  left: -7px;
-}
-
-.filter-checkbox .icon-check-off {
-  position: absolute;
-  top: -5px;
-  left: -7px;
-}
-
-
-.filter-checkbox input[type="checkbox"]:checked ~ .icon-check-on {
-  display: block;
-}
-
-.filter-checkbox input[type="checkbox"]:checked ~ .icon-check-off {
-  display: none;
-}
-
-*/
 
 .filter .btn {
   width: 160px;
@@ -893,7 +835,7 @@ input[type="checkbox"] + label:hover {
   position: absolute;
   top: 50px;
   left: 20px;
-  display: none;
+  display: block;
   width: 160px;
   height: 135px;
   padding: 0 20px;
@@ -918,6 +860,7 @@ input[type="checkbox"] + label:hover {
 
 .gallery-item-name h2 {
   margin: 0;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -1091,40 +1034,6 @@ input[type="checkbox"] + label:hover {
   opacity: 1.0;
   border: none;
 }
-/*
-.sorting-item-wrapper {
-  position: relative;
-  float: right;
-  width: 75px;
-  margin-top: 5px;
-}
-
-.sorting-item-wrapper .sorting-item {
-  font-size: 0;
-  background: #ffffff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.sorting-item span {
-  font-size: 20px;
-  line-height: 23px;
-  color: #c1c1c1;
-}
-
-.sorting-item span:hover {
-  color: #b5b5b5;
-}
-
-.sorting-item span:active {
-  color: #000000;
-}
-
-.sorting-item span:checked {
-  color: #00ca74;
-}
-*/
 
 .sorting-item-wrapper .icon-up-dir {
   position: absolute;
