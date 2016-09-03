@@ -835,7 +835,7 @@ input[type="checkbox"] + label:hover {
   position: absolute;
   top: 50px;
   left: 20px;
-  display: block;
+  display: none;
   width: 160px;
   height: 135px;
   padding: 0 20px;
