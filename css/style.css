@@ -383,6 +383,7 @@ body {
   line-height: 36px;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.001;
 }
 
 .index-content-top {
@@ -464,7 +465,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   padding: 9px 0;
   padding-left: 35px;
   color: #283136;
@@ -474,8 +475,8 @@ body {
 .index-content-bottom li:before {
   position: absolute;
   content: "";
-  top: 20px;
-  left: 0;
+  top: 19px;
+  left: -1px;
   width: 25px;
   height: 2px;
   background: #fb565a;
@@ -485,7 +486,7 @@ body {
 /*Портфолио*/
 
 .portfolio {
-  margin-top: 68px;
+  margin-top: 58px;
   margin-bottom: 90px;
   border-bottom: 2px solid #eeeeee;
   border-top: 2px solid #eeeeee;
@@ -1105,11 +1106,11 @@ input[type="checkbox"] + label:hover {
   position: absolute;
   width: 210px;
   padding-top: 14px;
-  padding-left: 20px;
+  padding-left: 18px;
   padding-right: 20px;
   color: #666666;
   top: 88px;
-  left: 192px;
+  left: 27%;
   background-color: #ffffff;
   border-radius: 2px;
 }
@@ -1126,14 +1127,14 @@ input[type="checkbox"] + label:hover {
 .map-info p {
   margin: 0;
   padding: 0;
-  padding-top: 17px;
+  padding-top: 13px;
   font-size: 16px;
   line-height: 20px;
 }
 
 .map-info span {
   display: block;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .map-canvas {
