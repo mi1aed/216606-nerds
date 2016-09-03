@@ -107,6 +107,7 @@ body {
   color: #000000;
   font-weight: 700;
 }
+
 .basket::before {
   content: "";
   position: absolute;
@@ -118,16 +119,6 @@ body {
   opacity: 0.3;
 }
 
-/*.basket .icon-basket {
-  position: absolute;
-  top: 7px;
-  left: 8px;
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/icon-basket.png");
-  opacity: 0.3;
-}
-*/
 
 /*Наведение*/
 
@@ -139,6 +130,7 @@ body {
   background-image: url("../img/icon-basket-red.png");
   opacity: 1.0;
 }
+
 
 /*Нажатие*/
 
@@ -172,8 +164,8 @@ body {
   height: 310px;
   background-repeat: no-repeat;
   background-position: 100% 10px;
-  -webkit-transition: left 0.3s ease;
-  -moz-transition: left 0.3s ease;
+                      -webkit-transition: left 0.3s ease;
+                      -moz-transition: left 0.3s ease;
   transition: left 0.3s ease;
 }
 
@@ -407,6 +399,36 @@ body {
   font-weight: 400;
 }
 
+.index-content-right span {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px;
+  margin-left: 66px;
+  font-size: 16px;
+  line-height: 8, 56px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.index-content-right span::before,
+.index-content-right span::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 65px;
+  height: 2px;
+  background: #eeeeee;
+}
+
+.index-content-right span::before {
+  right: 100%;
+}
+
+.index-content-right span::after {
+  left: 100%;
+}
+
 .index-content-right img {
   display: block;
   margin-bottom: 26px;
@@ -486,7 +508,6 @@ body {
 }
 
 .inner-page h1 {
-  
   float: left;
   width: 660px;
   margin: 0 auto;
@@ -504,9 +525,7 @@ body {
   display: none;
 }
 
-main {
-  
-}
+main {}
 
 .sidebar {
   float: left;
@@ -587,6 +606,7 @@ main {
   text-align: left;
   text-transform: uppercase;
 }
+
 .max-price {
   text-align: right;
   text-transform: uppercase;
@@ -609,6 +629,7 @@ main {
   border: none;
   outline: none;
 }
+
 .range {
   margin-bottom: 45px;
 }
@@ -725,6 +746,7 @@ input[type="checkbox"] + label:hover {
   margin-top: 45px;
   margin-bottom: 55px;
 }
+
 .features-field {
   margin-bottom: 20px;
 }
@@ -756,7 +778,6 @@ input[type="checkbox"] + label:hover {
 .filter-checkbox span:hover {
   color: #b5b5b5;
 }
-
 
 .filter-checkbox .icon-check-on {
   display: none;
@@ -922,86 +943,82 @@ input[type="checkbox"] + label:hover {
 }
 
 .triangles {
-	position: relative;
-	float: right;
-	width: 28px;
-	margin-top: 15px;
+  position: relative;
+  float: right;
+  width: 28px;
+  margin-top: 15px;
 }
 
 .triangles a,
 .triangles a:hover {
-	border: none;
+  border: none;
 }
 
 .triangles-up::before {
-	position: absolute;
-	top: 1px;
-	left: 17px;
-	width: 11px;
-	height: 10px;
-	background: url(../img/up.png);
-	content: "";
+  position: absolute;
+  top: 1px;
+  left: 17px;
+  width: 11px;
+  height: 10px;
+  background: url(../img/up.png);
+  content: "";
 }
 
 .triangles-up:hover::before {
-	background: url(../img/up-hover.png);
+  background: url(../img/up-hover.png);
 }
 
 .triangles-down:hover::before {
-	position: absolute;
-	top: 1px;
-	left: 0;
-	width: 11px;
-	height: 10px;
-	background: url(../img/down-hover.png);
-	content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 11px;
+  height: 10px;
+  background: url(../img/down-hover.png);
+  content: "";
 }
 
 .triangles-up:active::before {
-	background: url(../img/up-active.png);
+  background: url(../img/up-active.png);
 }
 
 .triangles-down:active::before {
-	position: absolute;
-	top: 1px;
-	left: 0;
-	width: 11px;
-	height: 10px;
-	background: url(../img/down-active.png);
-	content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 11px;
+  height: 10px;
+  background: url(../img/down-active.png);
+  content: "";
 }
 
 .triangles-down {
-	position: absolute;
-	top: 1px;
-	left: 0;
-	width: 11px;
-	height: 10px;
-	background: url(../img/down.png);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 11px;
+  height: 10px;
+  background: url(../img/down.png);
 }
 
 .triangles-up-active::before {
-	position: absolute;
-	top: 1px;
-	left: 17px;
-	width: 11px;
-	height: 10px;
-	background: url(../img/active-up.png);
-	content: "";
+  position: absolute;
+  top: 1px;
+  left: 17px;
+  width: 11px;
+  height: 10px;
+  background: url(../img/active-up.png);
+  content: "";
 }
 
 .triangles-down-active {
-	position: absolute;
-	top: 1px;
-	left: 0;
-	width: 11px;
-	height: 10px;
-	background: url(../img/active-down.png);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 11px;
+  height: 10px;
+  background: url(../img/active-down.png);
 }
-
-
-
-
 
 .sorting-btn-wrapper {
   float: left;
@@ -1219,7 +1236,6 @@ input[type="checkbox"] + label:hover {
   margin-right: 20px;
   padding: 0;
   background-color: #000000;
-  
   opacity: 0.2;
 }
 
@@ -1234,7 +1250,6 @@ input[type="checkbox"] + label:hover {
   width: 26px;
   height: 25px;
   background-position: -55px -275px;
-  
 }
 
 .icon-fb::before {
@@ -1248,9 +1263,7 @@ input[type="checkbox"] + label:hover {
   width: 26px;
   height: 25px;
   background-position: -47px -130px;
-  
 }
-
 
 .icon-inst::before {
   content: "";
@@ -1263,9 +1276,7 @@ input[type="checkbox"] + label:hover {
   width: 26px;
   height: 25px;
   background-position: -51px -170px;
-  
 }
-
 
 .social-btn:last-child {
   margin-right: 0;
@@ -1304,6 +1315,7 @@ input[type="checkbox"] + label:hover {
   color: #283136;
 }
 
+
 /*Форма*/
 
 .modal-content {
@@ -1322,6 +1334,10 @@ input[type="checkbox"] + label:hover {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
 }
 
+.modal-content-show {
+  display: block;
+}
+
 .modal-content-close {
   position: absolute;
   width: 40px;
@@ -1335,24 +1351,25 @@ input[type="checkbox"] + label:hover {
   outline: 0;
   font-size: 0;
 }
-.modal-content-close::before, 
+
+.modal-content-close::before,
 .modal-content-close::after {
-	content: "";
-	position: absolute;
-	top: 18px;
-	left: 8px;
-
-	width: 25px;
-	height: 4px;
-
-	background-color: #ffffff;
-	border-radius: 1px;
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 8px;
+  width: 25px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 1px;
 }
+
 .modal-content-close::before {
-	transform: rotate(45deg);
+  transform: rotate(45deg);
 }
+
 .modal-content-close::after {
-	transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .feedback-form input[type="text"],
@@ -1406,7 +1423,6 @@ input[type="checkbox"] + label:hover {
   width: 220px;
 }
 
-
 .field-row .btn {
   width: 100%;
   display: inline-block;
@@ -1423,7 +1439,3 @@ input[type="checkbox"] + label:hover {
   outline: none;
   cursor: pointer;
 }
-
-
-
-
