@@ -111,8 +111,8 @@ body {
 .basket::before {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 8px;
+  top: 8px;
+  left: 2px;
   width: 15px;
   height: 15px;
   background-image: url("../img/icon-basket.png");
@@ -175,10 +175,10 @@ body {
 
 .slider-controls {
   position: absolute;
-  bottom: 95px;
+  bottom: 90px;
   left: 50%;
   z-index: 10;
-  width: 200px;
+  width: 180px;
   margin-left: -100px;
   text-align: center;
 }
@@ -225,6 +225,15 @@ body {
   text-decoration: none;
   background: #fb565a;
   border-radius: 3px;
+}
+
+.slide .btn-slide:hover {
+  background-color: #d6494d;
+}
+
+.slide .btn-slide:active {
+  background-color: #b63538;
+  box-shadow: inset 0 3px rgba(0, 0, 0, 0.15);
 }
 
 .slide:nth-child(1) {
@@ -389,6 +398,7 @@ body {
 .index-content-left h3,
 .index-content-right h3 {
   text-transform: uppercase;
+  margin-bottom: 11px;
 }
 
 .index-content-right {
@@ -404,7 +414,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  
 }
 
 .index-content-right span {
@@ -448,17 +457,18 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.001px;
 }
 
 .index-content-bottom li {
   margin: 0;
   padding: 0;
   position: relative;
-  margin-bottom: -1px;
+  margin-bottom: 3px;
   padding: 9px 0;
   padding-left: 35px;
   color: #283136;
+  letter-spacing: 0.001px;
 }
 
 .index-content-bottom li:before {
@@ -523,7 +533,7 @@ body {
   float: left;
   width: 660px;
   margin: 0 auto;
-  margin-left: 107px;
+  margin-left: 104px;
   margin-top: 65px;
   margin-bottom: 86px;
   font-size: 40px;
@@ -531,6 +541,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 0.23px;
 }
 
 .inner-page .modal-content {
@@ -647,7 +658,7 @@ body {
 }
 
 .layout-field {
-  margin-bottom: 20px;
+  margin-bottom: 27px;
 }
 
 input[type="radio"] {
@@ -663,7 +674,7 @@ input[type="checkbox"] + label {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  height: 28px;
+  height: 26px;
   margin: 0 4px 0 0;
   margin-bottom: 13px;
   padding-left: 34px;
@@ -760,9 +771,9 @@ input[type="checkbox"] + label:hover {
 }
 
 .features {
-  margin-bottom: 35px;
+  margin-bottom: 41px;
 }
-
+/*
 .features-field {
   margin-bottom: 20px;
 }
@@ -783,7 +794,7 @@ input[type="checkbox"] + label:hover {
 .filter-checkbox input[type="checkbox"] {
   display: none;
 }
-/*
+
 .filter-checkbox span {
   margin-right: 10px;
   font-size: 28px;
@@ -966,6 +977,8 @@ input[type="checkbox"] + label:hover {
 
 .triangles {
   position: relative;
+  vertical-align: top;
+  top: -8px;
   float: right;
   width: 28px;
   margin-top: 15px;

@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="format-detection" content="telephone=no" />
   <title>Нёрдс - Каталог</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
@@ -15,7 +17,7 @@
       <div class="main-header-top clearfix">
         <div class="index-logo">
           <a href="index.html">
-            <img src="img/header-logo.png" width="139" height="59" alt="Нёрдс">
+            <img src="img/header-logo.png" width="139" height="56" alt="Нёрдс">
           </a>
         </div>
         <nav class="main-navigation">
@@ -47,7 +49,7 @@
   <main>
    <div class="container clearfix">
       <div class="sidebar">
-        <form class="filter" action="/echo" method="get">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <div class="range">
             <h2>Стоимость:</h2>
             <div class="range-filter">
@@ -219,9 +221,7 @@
         </p> 
         <a class="btn-form" href="form.html">Напишите нам</a>
       </div>
-      <div class="map-canvas" id="map">
-        <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-bDcvNrCAiTUxj_izzu4kytOJTpHI5Ky&amp;width=100%&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false" type="text/javascript"></script>
-        <script src="/js/icon_customImage.js" type="text/javascript"></script>
+      <div class="map-canvas" id="yandex-map">
       </div>
     </div>      
   </main>
@@ -250,7 +250,7 @@
   
   <div class="modal-content">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-    <form class="feedback-form" action="/echo" method="get">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
       <div class="field-row clearfix">
         <div class="name-field">
           <label for="name-field">
@@ -274,7 +274,9 @@
       </div>
     </form>
 </div>
-<script src="js/feedback.js"></script>
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/map.js" type="text/javascript"></script>
+<script src="js/feedback.js" type="text/javascript"></script>
 </body>
 
 </html>
