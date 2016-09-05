@@ -112,7 +112,7 @@ body {
 .basket::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 6px;
   left: 2px;
   width: 15px;
   height: 15px;
@@ -539,7 +539,7 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.20px;
+  letter-spacing: 0.30px;
   margin-bottom: 161px;
 }
 
@@ -631,6 +631,7 @@ body {
 
 .filter h2 {
   margin: 0;
+  padding: 0;
   margin-bottom: 17px;
   font-size: 18px;
   line-height: 30px;
@@ -1098,14 +1099,15 @@ input[type="checkbox"] + label:hover {
   z-index: 1;
   position: absolute;
   width: 210px;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-left: 18px;
   padding-right: 20px;
-  color: #666666;
-  top: 88px;
-  left: 27%;
   background-color: #ffffff;
   border-radius: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-440px,-50%);
+  
 }
 
 .map-info h2 {
@@ -1116,19 +1118,23 @@ input[type="checkbox"] + label:hover {
   padding-bottom: 0;
   margin-bottom: 0;
   text-transform: uppercase;
+  letter-spacing: 0.20px;
 }
 
 .map-info p {
   margin: 0;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 14px;
   font-size: 16px;
   line-height: 20px;
+  color: #666666;
+  letter-spacing: 0.1px;
 }
 
 .map-info span {
   display: block;
   margin-top: 20px;
+  letter-spacing: 0.01px;
 }
 
 .map-canvas {
@@ -1141,7 +1147,7 @@ input[type="checkbox"] + label:hover {
   display: block;
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 56px;
+  padding-left: 57px;
   padding-right: 56px;
   font-size: 12px;
   line-height: 18px;
@@ -1290,11 +1296,9 @@ input[type="checkbox"] + label:hover {
   font-size: 0;
 }
 
-
 .modal-content-show {
   display: block;
 }
-
 
 .modal-content-close::before,
 .modal-content-close::after {
@@ -1370,6 +1374,7 @@ input[type="checkbox"] + label:hover {
 .field-row .btn {
   width: 100%;
   display: inline-block;
+  vertical-align: top;
   padding: 10px 195px;
   font-size: 12px;
   line-height: 18px;
