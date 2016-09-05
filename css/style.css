@@ -703,16 +703,23 @@ input[type="radio"]:checked + label::before {
 }
 
 input[type="radio"] + label:hover::before {
-  background: url("../img/radio-unchecked.png") no-repeat;
+  background: url("../img/radio-unchecked-hover.png") no-repeat;
   content: "";
 }
 
 input[type="radio"]:checked + label:hover::before {
-  background: url("../img/radio-checked.png") no-repeat;
+  background: url("../img/radio-checked-hover.png") no-repeat;
   content: "";
 }
 
 input[type="radio"]:disabled + label {
+  background: url("../img/radio-unchecked.png") no-repeat;
+  content: "";
+  opacity: 0.4;
+  color: inherit;
+}
+
+input[type="radio"]:disabled + label:hover::before {
   background: url("../img/radio-unchecked.png") no-repeat;
   content: "";
   opacity: 0.4;
@@ -738,12 +745,12 @@ input[type="checkbox"]:checked + label::before {
 
 
 input[type="checkbox"] + label:hover::before {
-  background: url("../img/checkbox-unchecked.png") no-repeat;
+  background: url("../img/checkbox-unchecked-hover.png") no-repeat;
   content: "";
 }
 
 input[type="checkbox"]:checked + label:hover::before {
-  background: url("../img/checkbox-checked.png") no-repeat;
+  background: url("../img/checkbox-checked-hover.png") no-repeat;
   content: "";
 }
 
@@ -756,6 +763,13 @@ input[type="checkbox"]:disabled + label {
 
 input[type="checkbox"]:checked:disabled + label::before {
   background: url("../img/checkbox-checked.png") no-repeat;
+  content: "";
+  opacity: 0.4;
+  color: inherit;
+}
+
+input[type="checkbox"]:disabled + label:hover::before {
+  background: url("../img/checkbox-unchecked.png") no-repeat;
   content: "";
   opacity: 0.4;
   color: inherit;
@@ -1342,7 +1356,7 @@ input[type="checkbox"] + label:hover {
 
 .feedback-form input[type="text"]:focus,
 .feedback-form textarea:focus {
-  border: 2px solid #d7dcde;
+  border: 2px solid #56bffb;
 }
 
 .feedback-form textarea {
