@@ -1066,8 +1066,8 @@ input[type="checkbox"] + label:hover {
   background-repeat: no-repeat;
   display: block;
   width: 11px;
-  height: 10px;
-  background-position: -5px -197px;
+    height: 10px;
+    background-position: -5px -25px;
 }
 
 .triangles-down-active::before {
@@ -1080,46 +1080,8 @@ input[type="checkbox"] + label:hover {
   display: block;
   width: 11px;
   height: 10px;
-  background-position: -5px -25px;
+  background-position: -5px -5px;
 }
-
-
-
-
-
-/*
-.triangles-up-active::before {
-  position: absolute;
-  top: 1px;
-  left: 17px;
-  content: "";
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  display: block;
-  width: 11px;
-  height: 10px;
-  background-position: -5px -447px;
-  
-}
-/*
-.triangles-down-active {
-  position: absolute;
-  top: 1px;
-  left: 0;
-  content: "";
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-  display: block;
-  
-  
-  position: absolute;
-  top: 1px;
-  left: 0;
-  width: 11px;
-  height: 10px;
-  background: url("../img/active-down.png");
-}
-*/
 
 .sorting-btn-wrapper {
   float: left;
@@ -1275,7 +1237,7 @@ input[type="checkbox"] + label:hover {
   display: block;
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 57px;
+  padding-left: 56px;
   padding-right: 56px;
   font-size: 12px;
   line-height: 18px;
