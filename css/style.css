@@ -526,12 +526,6 @@ body {
 
 /*Стили каталога*/
 
-/*
-.main-header {
-  min-height: 326px;
-}
-*/
-
 .inner-page h1 {
 
   padding: 0 11px 0 0;
@@ -543,7 +537,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.3px;
-  padding-bottom: 75px;
+  padding-bottom: 85px;
   
 }
 
@@ -1374,7 +1368,7 @@ input[type="checkbox"] + label:hover {
   color: #000000;
   background: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
-}
+ }
 
 .modal-content-close {
   position: absolute;
