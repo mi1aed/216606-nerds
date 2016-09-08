@@ -1368,7 +1368,7 @@ input[type="checkbox"] + label:hover {
   color: #000000;
   background: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
- }
+  }
 
 .modal-content-close {
   position: absolute;
